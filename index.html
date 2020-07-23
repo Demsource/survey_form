@@ -3,60 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo Survey Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1 id="title">Our Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-
-    <form action="#" id="survey-form">
-    <div id="form-group">
-        <label for="name" id="name-label">Name</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    </div>
-    <div id="form-group">
-        <label for="email" id="email-label">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-    </div>
-    <div id="form-group">
-        <label for="number" id="number-label">What is your Age (optional)</label><br>
-        <input type="number" name="age" id="number" min="18" max="99" placeholder="age">
-    </div>
-    <div id="form-group">
-        <select name="role" id="dropdown" required>
-        <option disabled selected>Select your current role</option>
-        <option value="student">Student</option>
-        <option value="teacher">Teacher</option>
-        <option value="worker">Worker</option>
-        <option value="other">Other</option>
-        </select>
-    </div>
-    <div id="form-group">
-        <p>Rate this Survey Form page?</p>
-        <input type="radio" name="rate" id="good" selected>
-        <label for="good">Good</label>
-        <br>
-        <input type="radio" name="rate" id="normal">
-        <label for="normal">Normal</label>
-    </div>
-    <div id="form-group">
-        <p>Which part of Web do you like most?</p>
-        <input type="checkbox" id="mark-up" name="web" value="mark-up">
-        <label for="mark-up">Mark-Up</label><br>
-        <input type="checkbox" id="front-end" name="web" value="front-end">
-        <label for="front-end">Front-End</label><br>
-        <input type="checkbox" id="back-end" name="web" value="back-end">
-        <label for="back-end">Back-End</label><br>
-    </div>
-    <div id="form-group">
-        <p>Any comments or suggestions?</p>
-        <input type="textarea" id="comments" name="comments">
-    </div>
-    <div id="form-group">
-        <button type="submit" id="submit">Submit</button>
-    </div>
-    </form>
+   
+    <main>
+        <div class="heading">
+            <h1 id="title">Our Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form action="#" id="survey-form">
+        <div id="form-group">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required>
+        </div>
+        <div id="form-group">
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-control" required>
+        </div>
+        <div id="form-group">
+            <label for="number" id="number-label">What is your Age (optional)</label><br>
+            <input type="number" name="age" id="number" min="18" max="99" placeholder="age" class="form-control">
+        </div>
+        <div id="form-group">
+            <p>What is your role?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected>Select your current role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="worker">Worker</option>
+            <option value="other">Other</option>
+            </select>
+        </div>
+        <div id="form-group">
+            <p>Rate this Survey Form page?</p>
+            <input type="radio" name="rate" id="good" selected>
+            <label for="good">Good</label>
+            <br>
+            <input type="radio" name="rate" id="normal">
+            <label for="normal">Normal</label>
+        </div>
+        <div id="form-group">
+            <p>Which part of Web do you like most?</p>
+            <input type="checkbox" id="mark-up" name="web" value="mark-up">
+            <label for="mark-up">Mark-Up</label><br>
+            <input type="checkbox" id="front-end" name="web" value="front-end">
+            <label for="front-end">Front-End</label><br>
+            <input type="checkbox" id="back-end" name="web" value="back-end">
+            <label for="back-end">Back-End</label><br>
+        </div>
+        <div id="form-group">
+            <p>Any comments or suggestions?</p>
+            <input type="textarea" id="comments" class="form-control" name="comments">
+        </div>
+        <div id="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        </form>
+    </main>
 
 </body>
 </html>

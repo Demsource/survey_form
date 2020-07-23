@@ -7,14 +7,45 @@ body {
 }
 main {
     width: 60%;
-    background-color: red;
-    margin: 0 auto;
+    /* background-color: red; */
+    margin: 5% auto;
     padding: 2rem;
+    color: white;
 }
 .heading {
     text-align: center;
 }
+.heading h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 3%;;
+}
+form {
+    background-color: rgba(6, 6, 53, 0.7);
+    margin: 5% 0;
+    padding: 5%;
+}
+.form-group {
+    margin-bottom: 1em;
+}
+.form-group p {
+    margin-bottom: .5em;
+}
 .form-control {
+    box-sizing : border-box;
     width: 100%;
-    /* margin: 1em 1em; */
+    height: 2.5em;
+    margin: 0.5em 0;
+}
+#comments {
+    width: 100%;
+    min-height: 7rem;
+    resize: vertical;
+    text-align: start;
+}
+#submit {
+    color: white;
+    background-color: rgba(0, 255, 98, 0.5);
+    padding: .5rem;
+    width: 100%;
 }
